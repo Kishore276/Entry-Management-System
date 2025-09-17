@@ -1,42 +1,71 @@
 # Safar-E-Tourism
 
-## DEMO VIDEO:-  THE VIDEO UPLOAD IN DRIVE
+A ticketless entry system for museums and monuments using QR codes.
 
-https://drive.google.com/drive/folders/16YBd__aemhcj8Qo8siAau5LykgCXlZWE
-
-## PROBLEM STATEMENT:-
-"An e-ticket (electronic ticket) is a paperless electronic document used for ticketing. It can help in better crowd management of museums/heritage sites. Summary: To devise a QR based ticketing system with necessary hardware for the seamless visitor experience in Museums/Heritage sites. In addition, The prediction of the expected crowd should be added as a feature.
-
-## TEAM MEMBER NAMES:-
-CHIRLAMCHERLA CHARAN TEJA 
-PINNIBOYINA HARISH BABU
-BHADRI AKHILESWARREDDY
-CHEBOLU GANESH PAVAN SAI
-
-## SOLUTION
-Ticketless Entry System to Monuments and Museums enabled with a QR feature that allows the verification of visitors at the entry of the monument or the museum by scanning the QR code on their E-tickets.
-
-## STEPS AND INSTRUCTIONS
+## How to Clone
+```bash
+git clone https://github.com/Kishore276/Entry-Management-System.git
 cd Ticketless-Entry-System-to-Museums
+```
 
+## How to Run
+
+1. Backend Setup:
+```bash
+python -m venv env
+source env/bin/activate  # On Windows use: env\Scripts\activate
+pip install -r requirements.txt
+python manage.py migrate
 python manage.py runserver
+```
 
+2. Frontend Setup:
+```bash
+cd Frontend
+npm install
+npm start
+```
 
-## About 
-- Developed using **Django** as a backend and **HTML, CSS, JS and React** as the frontend, ‘Safar’ provides a seamless and easy-to-use interface for users to book their tickets.
-- ’Safar’ features an Admin Module that provides the Live Count and booking details of the Tourists
-- Finally, the QR Scanning feature is implemented to allow prompt verification of tourists as they enter the monument or museum!
+1. Clone the repository:
+```bash
+git clone https://github.com/Kishore276/Entry-Management-System.git
+cd Ticketless-Entry-System-to-Museums
+```
 
-#### Home Page
-![Alt text](/media/home.png "Home Page")
+2. Set up Backend:
+```bash
+python -m venv env
+source env/bin/activate  # On Windows use: env\Scripts\activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+```
 
-#### Choose a monument/museum
-![Alt text](/media/monuments.png "")
+3. Set up Frontend:
+```bash
+cd Frontend
+npm install
+npm start
+```
 
-#### Booking Page
-![Alt text](/media/book.png "Book")
+## Project Structure
 
-#### QR Verification
-![Alt text](/media/verify.png "Verify")
+```
+├── Backend/            # Django backend server
+├── Frontend/           # React frontend application
+│   ├── public/        # Static files
+│   ├── src/           # React source code
+│   └── build/         # Production build
+├── qrscan/            # QR code handling
+├── media/             # Uploaded files
+├── manage.py          # Django management
+└── requirements.txt   # Python dependencies
+```
 
+![Home Page](/media/home.png "Home Page")
 
+![Monument Selection](/media/monuments.png "Monument Selection")
+
+![Booking Page](/media/book.png "Booking Page")
+
+![QR Verification](/media/verify.png "QR Verification")
