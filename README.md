@@ -61,11 +61,3 @@ npm start
 ├── manage.py          # Django management
 └── requirements.txt   # Python dependencies
 ```
-
-![Home Page](/media/home.png "Home Page")
-
-![Monument Selection](/media/monuments.png "Monument Selection")
-
-![Booking Page](/media/book.png "Booking Page")
-
-![QR Verification](/media/verify.png "QR Verification")
