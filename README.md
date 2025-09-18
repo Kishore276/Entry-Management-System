@@ -1,4 +1,4 @@
-# Safar-E-Tourism
+#Ticketless Entry System
 
 A ticketless entry system for museums and monuments using QR codes.
 
